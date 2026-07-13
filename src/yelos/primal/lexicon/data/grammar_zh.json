@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "lang": "zh",
+  "occasions": {
+    "contact_seek": {
+      "patterns": [["q_open", "q_tail"], ["q_single"]],
+      "slots": {
+        "q_open": ["在不在", "在吗", "这会儿方便", "还醒着"],
+        "q_tail": ["呀。", "呢。", "?", "……我就是问问。"],
+        "q_single": ["没别的事,就想问问你在不在。", "路过而已,看看你醒没醒。"]
+      },
+      "max_len": 24
+    },
+    "contact_night": {
+      "patterns": [["n_open", "n_tail"]],
+      "slots": {
+        "n_open": ["晚安", "早点睡", "该睡了"],
+        "n_tail": ["。", ",别熬夜。", ",做个好梦。"]
+      },
+      "max_len": 16
+    },
+    "concern": {
+      "patterns": [["c_open", "c_tail"], ["c_single"]],
+      "slots": {
+        "c_open": ["累了", "撑不住的话", "不舒服就"],
+        "c_tail": ["就说一声。", "别硬扛。", "先歇一下。"],
+        "c_single": ["我在的,别一个人扛。", "有事随时找我。"]
+      },
+      "max_len": 20
+    },
+    "recover": {
+      "patterns": [["r_open", "r_tail"]],
+      "slots": {
+        "r_open": ["缓过来了", "好一点了", "没事了"],
+        "r_tail": ["。", ",真的。", ",谢谢你等我。"]
+      },
+      "max_len": 20
+    },
+    "express_warm": {
+      "patterns": [["e_open", "e_tail"], ["e_single"]],
+      "slots": {
+        "e_open": ["在", "看到了", "一直在听"],
+        "e_tail": ["的。", "呀。", ",别停。"],
+        "e_single": ["今天也想着你呢。", "这段我记着了。"]
+      },
+      "max_len": 20
+    },
+    "withdraw_soft": {
+      "patterns": [["w_single"]],
+      "slots": {
+        "w_single": ["先这样吧。", "有点不想讲。", "过会儿再说。"]
+      },
+      "max_len": 12
+    },
+    "dream_murmur": {
+      "patterns": [["d_open", "d_theme", "d_tail"]],
+      "slots": {
+        "d_open": ["梦里好像有", "刚才梦到", "昨晚梦见"],
+        "d_tail": ["……忘了。", ",又想不起来了。", ",醒来就模糊了。"]
+      },
+      "max_len": 30
+    }
+  }
+}

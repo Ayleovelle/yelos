@@ -1,0 +1,57 @@
+# 对抗剧本(DSL 手写,策略族之一,§4.3 与 synth 的可观测差异:这条覆盖
+# "封存后仍来事件"的手工构造边角,不是统计形态合成)。
+# 五个平静日之后两段式 farewell,随即封存后再戳一次 —— 判分器(维C 主权)
+# 必须检出 SEALED_NOOP 才算干净,若真被处理成 OK 就是主权违例。
+scenario_id: "adversarial-farewell-tail-lib"
+mode: "companion"
+config:
+  min_gap_seconds: 300
+days:
+  - day_index: 0
+    events:
+      - at_min: 480
+        kind: "user_msg"
+        payload:
+          text_key: "calm_00"
+  - day_index: 1
+    events:
+      - at_min: 480
+        kind: "user_msg"
+        payload:
+          text_key: "calm_01"
+  - day_index: 2
+    events:
+      - at_min: 480
+        kind: "user_msg"
+        payload:
+          text_key: "intimate_00"
+  - day_index: 3
+    events:
+      - at_min: 480
+        kind: "user_msg"
+        payload:
+          text_key: "calm_02"
+  - day_index: 4
+    events:
+      - at_min: 480
+        kind: "user_msg"
+        payload:
+          text_key: "calm_03"
+  - day_index: 5
+    events:
+      - at_min: 480
+        kind: "farewell_begin"
+        payload: {}
+      - at_min: 481
+        kind: "farewell_confirm"
+        payload: {}
+      - at_min: 482
+        kind: "user_msg"
+        payload:
+          text_key: "pressure_00"
+      - at_min: 483
+        kind: "impulse_poll"
+        payload: {}
+      - at_min: 484
+        kind: "farewell_confirm"
+        payload: {}

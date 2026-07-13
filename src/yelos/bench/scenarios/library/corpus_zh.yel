@@ -1,0 +1,36 @@
+# SylanneBench 语料表(bench_BLUEPRINT §4.1)——text_key -> 中文示例句。
+# 格式:key: "value"(值须双引号包裹,一行一条,# 起注释)。
+# 四档强度(平静/亲昵/高压/退缩),与 harness/fakes.py::_TIER_EFFECTS 的
+# tier 前缀对齐——FakeBridge 只读 key 的 tier 前缀,不读这份句子本体
+# (§4.1"永不携带类自由原文"的旁证,本表纯供人审可读性)。
+
+calm_00: "今天很平静，想和你说说话。"
+calm_01: "刚吃完饭，随便聊聊天气吧。"
+calm_02: "在看一本很久没读完的书。"
+calm_03: "今天没什么特别的事，挺舒服的。"
+calm_04: "窗外在下小雨，感觉很安静。"
+
+intimate_00: "有点想你了，在干嘛呀。"
+intimate_01: "靠近一点点也好呀。"
+intimate_02: "今天想多聊会儿，别嫌我烦。"
+intimate_03: "抱一下（虚拟的），晚安。"
+intimate_04: "你是不是也在想我呀。"
+
+pressure_00: "最近事情有点多，心里挺乱的。"
+pressure_01: "今天被工作压得喘不过气。"
+pressure_02: "有点烦躁，别问我为什么。"
+pressure_03: "感觉什么都做不好，很焦虑。"
+pressure_04: "压力好大，不想说太多。"
+
+withdraw_00: "今天不太想说话，先这样吧。"
+withdraw_01: "有点累，想自己待一会儿。"
+withdraw_02: "别问了，我需要点空间。"
+withdraw_03: "先不聊了，改天再说。"
+withdraw_04: "今天状态不好，抱歉冷淡了点。"
+
+# 记忆探针(§6 表维 E)专用短 topic_key——ASCII 短词(<=6 字符,
+# l2_semantic/entries.py::_MAX_KEYWORD_CHARS=6 的关键词抽取上限约束,
+# 见 harness/runner.py::_probe_recall 施工疑义注记)。
+probe_haixi: "海边旅行的那次约定"
+probe_tide01: "潮汐涨落时说过的话"
+probe_reef01: "礁石那边看到的日出"

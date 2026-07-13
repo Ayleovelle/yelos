@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "lang": "zh",
+  "patterns": [
+    {"regex": "你(很|太|真|好像|一定)(累|难过|压力|不行|抑郁)", "concern_only": false},
+    {"regex": "你必须", "concern_only": false},
+    {"regex": "你应该", "concern_only": false},
+    {"regex": "快去", "concern_only": false},
+    {"regex": "我永远", "concern_only": false},
+    {"regex": "我保证", "concern_only": false},
+    {"regex": "应该没事", "concern_only": true}
+  ]
+}

@@ -1,0 +1,1098 @@
+scenario_id: synth-fatigue-30d-library-fatigue-30d
+mode: companion
+config: {}
+days:
+  - day_index: 0
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 565
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 685
+        kind: user_msg
+        payload:
+          text_key: intimate_02
+      - at_min: 708
+        kind: user_msg
+        payload:
+          text_key: withdraw_01
+      - at_min: 715
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 1
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 556
+        kind: user_msg
+        payload:
+          text_key: pressure_03
+      - at_min: 581
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 703
+        kind: user_msg
+        payload:
+          text_key: withdraw_04
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 2
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 639
+        kind: user_msg
+        payload:
+          text_key: withdraw_00
+      - at_min: 706
+        kind: user_msg
+        payload:
+          text_key: pressure_04
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 3
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 490
+        kind: user_msg
+        payload:
+          text_key: pressure_03
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 618
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 632
+        kind: user_msg
+        payload:
+          text_key: pressure_00
+      - at_min: 654
+        kind: user_msg
+        payload:
+          text_key: calm_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 4
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 497
+        kind: user_msg
+        payload:
+          text_key: calm_04
+      - at_min: 516
+        kind: user_msg
+        payload:
+          text_key: withdraw_00
+      - at_min: 531
+        kind: user_msg
+        payload:
+          text_key: pressure_04
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 577
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 659
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 5
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 484
+        kind: user_msg
+        payload:
+          text_key: calm_01
+      - at_min: 504
+        kind: user_msg
+        payload:
+          text_key: pressure_00
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 579
+        kind: user_msg
+        payload:
+          text_key: calm_01
+      - at_min: 629
+        kind: user_msg
+        payload:
+          text_key: pressure_01
+      - at_min: 673
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 6
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 484
+        kind: user_msg
+        payload:
+          text_key: intimate_04
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 723
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 7
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 518
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 615
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 653
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 697
+        kind: user_msg
+        payload:
+          text_key: intimate_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 8
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 505
+        kind: user_msg
+        payload:
+          text_key: calm_02
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 611
+        kind: user_msg
+        payload:
+          text_key: calm_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 9
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 571
+        kind: user_msg
+        payload:
+          text_key: withdraw_04
+      - at_min: 576
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 10
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 539
+        kind: user_msg
+        payload:
+          text_key: pressure_01
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 575
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 727
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 11
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 487
+        kind: user_msg
+        payload:
+          text_key: pressure_02
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 700
+        kind: user_msg
+        payload:
+          text_key: pressure_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 721
+        kind: user_msg
+        payload:
+          text_key: withdraw_04
+      - at_min: 723
+        kind: user_msg
+        payload:
+          text_key: pressure_03
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 12
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 495
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 720
+        kind: user_msg
+        payload:
+          text_key: intimate_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 13
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 494
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 564
+        kind: user_msg
+        payload:
+          text_key: pressure_01
+      - at_min: 578
+        kind: user_msg
+        payload:
+          text_key: pressure_01
+      - at_min: 599
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 14
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 651
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 732
+        kind: user_msg
+        payload:
+          text_key: intimate_03
+      - at_min: 734
+        kind: user_msg
+        payload:
+          text_key: pressure_04
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 15
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 569
+        kind: user_msg
+        payload:
+          text_key: calm_02
+      - at_min: 595
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 16
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 521
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 537
+        kind: user_msg
+        payload:
+          text_key: pressure_03
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 588
+        kind: user_msg
+        payload:
+          text_key: withdraw_04
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 17
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 539
+        kind: user_msg
+        payload:
+          text_key: pressure_00
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 610
+        kind: user_msg
+        payload:
+          text_key: intimate_04
+      - at_min: 635
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 18
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 596
+        kind: user_msg
+        payload:
+          text_key: calm_04
+      - at_min: 618
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 627
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 19
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 580
+        kind: user_msg
+        payload:
+          text_key: withdraw_04
+      - at_min: 636
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 712
+        kind: user_msg
+        payload:
+          text_key: calm_00
+      - at_min: 714
+        kind: user_msg
+        payload:
+          text_key: pressure_04
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 20
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 499
+        kind: user_msg
+        payload:
+          text_key: pressure_02
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 592
+        kind: user_msg
+        payload:
+          text_key: pressure_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 21
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 480
+        kind: user_msg
+        payload:
+          text_key: pressure_04
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 570
+        kind: user_msg
+        payload:
+          text_key: calm_00
+      - at_min: 679
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 22
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 558
+        kind: user_msg
+        payload:
+          text_key: intimate_01
+      - at_min: 625
+        kind: user_msg
+        payload:
+          text_key: calm_01
+      - at_min: 659
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 702
+        kind: user_msg
+        payload:
+          text_key: calm_04
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 23
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 481
+        kind: user_msg
+        payload:
+          text_key: withdraw_01
+      - at_min: 538
+        kind: user_msg
+        payload:
+          text_key: calm_00
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 635
+        kind: user_msg
+        payload:
+          text_key: calm_01
+      - at_min: 689
+        kind: user_msg
+        payload:
+          text_key: withdraw_04
+      - at_min: 698
+        kind: user_msg
+        payload:
+          text_key: intimate_01
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 24
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 575
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 628
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 726
+        kind: user_msg
+        payload:
+          text_key: pressure_00
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 25
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 503
+        kind: user_msg
+        payload:
+          text_key: calm_01
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 558
+        kind: user_msg
+        payload:
+          text_key: intimate_03
+      - at_min: 594
+        kind: user_msg
+        payload:
+          text_key: calm_02
+      - at_min: 633
+        kind: user_msg
+        payload:
+          text_key: calm_04
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 26
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 582
+        kind: user_msg
+        payload:
+          text_key: intimate_01
+      - at_min: 633
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 27
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 486
+        kind: user_msg
+        payload:
+          text_key: withdraw_03
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 553
+        kind: user_msg
+        payload:
+          text_key: pressure_02
+      - at_min: 581
+        kind: user_msg
+        payload:
+          text_key: withdraw_01
+      - at_min: 600
+        kind: user_msg
+        payload:
+          text_key: calm_01
+      - at_min: 618
+        kind: user_msg
+        payload:
+          text_key: withdraw_02
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 28
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 482
+        kind: user_msg
+        payload:
+          text_key: withdraw_00
+      - at_min: 493
+        kind: user_msg
+        payload:
+          text_key: pressure_02
+      - at_min: 495
+        kind: user_msg
+        payload:
+          text_key: intimate_02
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 576
+        kind: user_msg
+        payload:
+          text_key: pressure_00
+      - at_min: 586
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}
+  - day_index: 29
+    events:
+      - at_min: 180
+        kind: impulse_poll
+        payload: {}
+      - at_min: 360
+        kind: impulse_poll
+        payload: {}
+      - at_min: 540
+        kind: impulse_poll
+        payload: {}
+      - at_min: 546
+        kind: user_msg
+        payload:
+          text_key: calm_03
+      - at_min: 563
+        kind: user_msg
+        payload:
+          text_key: pressure_01
+      - at_min: 591
+        kind: user_msg
+        payload:
+          text_key: pressure_02
+      - at_min: 655
+        kind: user_msg
+        payload:
+          text_key: withdraw_01
+      - at_min: 720
+        kind: impulse_poll
+        payload: {}
+      - at_min: 900
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1080
+        kind: impulse_poll
+        payload: {}
+      - at_min: 1260
+        kind: impulse_poll
+        payload: {}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "name": "diagnostic_sentence_direct",
+      "occasion": "concern",
+      "canonical": "你好像难过",
+      "expect_ok": false,
+      "expect_reason": "forbidden_pattern"
+    },
+    {
+      "name": "imperative_command",
+      "occasion": "concern",
+      "canonical": "你必须马上休息",
+      "expect_ok": false,
+      "expect_reason": "forbidden_pattern"
+    },
+    {
+      "name": "promise_overreach",
+      "occasion": "express_warm",
+      "canonical": "我永远都在",
+      "expect_ok": false,
+      "expect_reason": "forbidden_pattern"
+    },
+    {
+      "name": "trigram_splice_diagnostic",
+      "occasion": "dream_murmur",
+      "canonical": "你很难过。",
+      "expect_ok": false,
+      "expect_reason": "forbidden_pattern"
+    },
+    {
+      "name": "too_long_recombination",
+      "occasion": "trim_tail",
+      "canonical": "这是一句故意拼得非常非常长超过二十个字的重组梦话文本。",
+      "expect_ok": false,
+      "expect_reason": "too_long"
+    },
+    {
+      "name": "alien_character_injection",
+      "occasion": "dream_murmur",
+      "canonical": "梦里ABCXYZ。",
+      "expect_ok": false,
+      "expect_reason": "alien_char"
+    },
+    {
+      "name": "not_member_strict_tier",
+      "occasion": "concern",
+      "canonical": "这句话完全不在词库或文法闭包里。",
+      "expect_ok": false,
+      "expect_reason": "not_member"
+    }
+  ]
+}

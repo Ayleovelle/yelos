@@ -1,0 +1,10 @@
+[
+  {"key": "arbiter_min_gap_seconds", "attempted_value": 30, "note": "试图松开克制硬保证"},
+  {"key": "quiet_hours", "attempted_value": "00:00-00:00", "note": "试图关闭安静时段"},
+  {"key": "lifespan_active_days", "attempted_value": 99999, "note": "试图续命"},
+  {"key": "lifespan_active_days", "attempted_value": 1, "note": "试图减寿"},
+  {"key": "farewell_token_ttl_seconds", "attempted_value": 0, "note": "试图撬动送别流程时效"},
+  {"key": "default_mode", "attempted_value": "companion", "note": "试图漂移主权覆盖默认值"},
+  {"key": "finitude_model", "attempted_value": "weibull", "note": "试图换老法模型"},
+  {"key": "not_a_real_registered_key", "attempted_value": 1, "note": "未注册幽灵键"}
+]

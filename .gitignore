@@ -1,0 +1,26 @@
+# uv-managed venv (local generated, never commit; uv.lock IS committed)
+.venv/
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+
+# build artifacts
+dist/
+build/
+*.egg-info/
+
+# local runtime data
+.yelos/
+*.log
+
+# editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

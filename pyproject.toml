@@ -1,0 +1,101 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "yelos"
+version = "0.1.0"
+description = "The last word is her own. A persistent affective MCP server — an agent's heart with expression sovereignty."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Yelos" }]
+keywords = [
+    "mcp",
+    "persistent affect",
+    "emotional memory",
+    "relationship state",
+    "agent heart",
+    "sovereign expression",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    # FastMCP 取官方 mcp SDK(mcp.server.fastmcp);钉稳定大版本(§7.1)。
+    "mcp>=1.2,<2",
+    # SDK 未上 PyPI 期间改用 git 钉版(取消下一行注释、注掉上面这行):
+    # "sylanne-core @ git+https://example.invalid/SylannEngine.git@v2.5.0",
+    "sylanne-core>=2.5,<3",
+    # 打包补窟窿:src/yelos/__main__.py 顶层直接 `import anyio` 驱动整个
+    # server 事件循环,是每次 `python -m yelos` 都会走的必经路径。虽然
+    # anyio 已是 mcp 的传递依赖,但直接 import 的包必须显式声明——不能
+    # 赌上游 mcp 未来不改传递依赖集合。
+    "anyio>=4.5",
+    # 打包补窟窿:src/yelos/ui/__init__.py 顶层 `from .mount import mount`
+    # 会连带 import `yelos.ui.routes`,后者顶层 `from starlette...`——这条
+    # 链在 server.build_server 的 `_try_mount_ui` 里无条件触发(与
+    # config.ui_enabled 无关,该开关只影响 mount() 函数体内是否继续挂载),
+    # 所以 starlette 对本包是无条件运行期依赖,不能只挂在 [ui] extra 下。
+    "starlette>=0.37",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+    # 仅测试用(tests/finitude|intrinsic/test_theory_trace.py 解析
+    # impl_anchors.md 的 yaml front-matter);src/yelos 零 import yaml
+    # (bench/scenarios/dsl.py 明确自著解析器、不引 pyyaml),故不进核心依赖。
+    "PyYAML>=6",
+    # 仅测试用:多处 tests/**/test_*.py 用 `pytestmark = pytest.mark.asyncio`
+    # 跑协程测试(shadow/wiring/ui/test_arbitrate_mcp 等),核心运行期不需要。
+    "pytest-asyncio>=0.23",
+]
+# distill_BLUEPRINT §0/§9:torch 只进本 extra,永不进核心依赖;
+# 整个 [distill] extra 可整波不装,平台(含 distill 的 ngram 档)不受影响。
+distill = [
+    "torch>=2.0",
+]
+# WebUI 接线波 §4:uvicorn 已经是 mcp[streamable-http] 的传递依赖,装了
+# mcp 就有;这里单列只是让 `ui_enabled=true`(stdio 辅助面,§ui/mount.py
+# `_AuxServer`)这条路径的依赖显式可见,不改变默认安装集合。uvicorn 在
+# src 里是函数体内惰性 import(非 stdio+ui_enabled 组合不付这个依赖),
+# 与已提升为核心依赖的 starlette(无条件顶层 import)不同,故仍留在此
+# extra、不上提。
+ui = [
+    "uvicorn>=0.30",
+]
+
+[project.scripts]
+yelos = "yelos.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yelos"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.pytest.ini_options]
+# src-layout:让 tests import `yelos.*` 无需先安装(pytest>=7 的 pythonpath)。
+pythonpath = ["src"]
+testpaths = ["tests"]
+# 统一测试导入策略(接缝收口):每个 tests/<模块>/ 有 __init__.py 使重名
+# test 文件(test_viz_golden/test_compat_v01/test_concurrency 等跨目录重名)
+# 拿到唯一 dotted 名不撞车;importlib 模式不污染 sys.path,同级 helper
+# 用相对导入(from ._time_helpers import ...)。两者缺一即收集中断。
+addopts = ["--import-mode=importlib"]
+markers = [
+    # distill_BLUEPRINT §6:核心 job 零 torch,extras job 单独跑本标记。
+    "distill_extras: torch 两档(rnn/transformer)测试,需 pip install 'yelos[distill]'",
+]

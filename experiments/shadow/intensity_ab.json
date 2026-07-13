@@ -1,0 +1,179 @@
+{
+  "grid": [
+    {
+      "strength": 0.0,
+      "conf": 0.0,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.0,
+      "conf": 0.25,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.0,
+      "conf": 0.5,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.0,
+      "conf": 0.75,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.0,
+      "conf": 1.0,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.25,
+      "conf": 0.0,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.25,
+      "conf": 0.25,
+      "linear": 0.344,
+      "saturating": 0.374,
+      "delta": 0.03
+    },
+    {
+      "strength": 0.25,
+      "conf": 0.5,
+      "linear": 0.387,
+      "saturating": 0.448,
+      "delta": 0.061
+    },
+    {
+      "strength": 0.25,
+      "conf": 0.75,
+      "linear": 0.431,
+      "saturating": 0.522,
+      "delta": 0.091
+    },
+    {
+      "strength": 0.25,
+      "conf": 1.0,
+      "linear": 0.475,
+      "saturating": 0.596,
+      "delta": 0.121
+    },
+    {
+      "strength": 0.5,
+      "conf": 0.0,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.5,
+      "conf": 0.25,
+      "linear": 0.387,
+      "saturating": 0.417,
+      "delta": 0.03
+    },
+    {
+      "strength": 0.5,
+      "conf": 0.5,
+      "linear": 0.475,
+      "saturating": 0.533,
+      "delta": 0.058
+    },
+    {
+      "strength": 0.5,
+      "conf": 0.75,
+      "linear": 0.562,
+      "saturating": 0.65,
+      "delta": 0.088
+    },
+    {
+      "strength": 0.5,
+      "conf": 1.0,
+      "linear": 0.65,
+      "saturating": 0.767,
+      "delta": 0.117
+    },
+    {
+      "strength": 0.75,
+      "conf": 0.0,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 0.75,
+      "conf": 0.25,
+      "linear": 0.431,
+      "saturating": 0.441,
+      "delta": 0.01
+    },
+    {
+      "strength": 0.75,
+      "conf": 0.5,
+      "linear": 0.562,
+      "saturating": 0.583,
+      "delta": 0.021
+    },
+    {
+      "strength": 0.75,
+      "conf": 0.75,
+      "linear": 0.694,
+      "saturating": 0.724,
+      "delta": 0.03
+    },
+    {
+      "strength": 0.75,
+      "conf": 1.0,
+      "linear": 0.825,
+      "saturating": 0.866,
+      "delta": 0.041
+    },
+    {
+      "strength": 1.0,
+      "conf": 0.0,
+      "linear": 0.3,
+      "saturating": 0.3,
+      "delta": 0.0
+    },
+    {
+      "strength": 1.0,
+      "conf": 0.25,
+      "linear": 0.475,
+      "saturating": 0.456,
+      "delta": -0.019
+    },
+    {
+      "strength": 1.0,
+      "conf": 0.5,
+      "linear": 0.65,
+      "saturating": 0.611,
+      "delta": -0.039
+    },
+    {
+      "strength": 1.0,
+      "conf": 0.75,
+      "linear": 0.825,
+      "saturating": 0.767,
+      "delta": -0.058
+    },
+    {
+      "strength": 1.0,
+      "conf": 1.0,
+      "linear": 1.0,
+      "saturating": 0.922,
+      "delta": -0.078
+    }
+  ]
+}

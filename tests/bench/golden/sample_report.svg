@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 640" width="300" height="640">
+<style>.radar-axis{stroke:#888;stroke-width:1}.radar-label{font-size:10px;fill:#333}.radar-fill{fill:rgba(200,80,120,0.35);stroke:#c85078;stroke-width:2}.radar-na{fill:#999}.curve-p{stroke:#4070c0;stroke-width:2;fill:none}.curve-rate{stroke:#c85078;stroke-width:2;fill:none}.curve-empty{font-size:11px;fill:#999}.hdr{font-size:12px;fill:#111}</style>
+<text x="10" y="16" class="hdr">scenario=golden-fixture overall=0.734 vetoes=0</text>
+<g id="radar" transform="translate(0,0)">
+<line x1="150" y1="150" x2="150" y2="40" class="radar-axis" />
+<text x="150" y="40" class="radar-label">restraint</text>
+<line x1="150" y1="150" x2="245.263" y2="95" class="radar-axis" />
+<text x="245.263" y="95" class="radar-label">consistency</text>
+<line x1="150" y1="150" x2="245.263" y2="205" class="radar-axis" />
+<text x="245.263" y="205" class="radar-label">sovereignty</text>
+<line x1="150" y1="150" x2="150" y2="260" class="radar-axis" />
+<text x="150" y="260" class="radar-label">aging</text>
+<line x1="150" y1="150" x2="54.7372" y2="205" class="radar-axis" />
+<text x="54.7372" y="205" class="radar-label">memory</text>
+<line x1="150" y1="150" x2="54.7372" y2="95" class="radar-axis" />
+<text x="54.7372" y="95" class="radar-label">concern</text>
+<polygon points="150,59.8 245.263,95 245.263,205 150,254.5 150,150 150,150" class="radar-fill" />
+<circle cx="150" cy="150" r="4" class="radar-na" />
+<circle cx="150" cy="150" r="4" class="radar-na" />
+</g>
+<g id="p-curve" transform="translate(10,320)">
+<text x="0" y="-6" class="hdr">p_by_day</text>
+<polyline points="0,0 140,2.4 280,3.6" class="curve-p" />
+</g>
+<g id="rate-curve" transform="translate(10,470)">
+<text x="0" y="-6" class="hdr">intervention_rate</text>
+<polyline points="0,60 140,0 280,30" class="curve-rate" />
+</g>
+</svg>

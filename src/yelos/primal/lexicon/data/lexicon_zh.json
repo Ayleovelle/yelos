@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "lang": "zh",
+  "occasions": {
+    "withdraw_heavy": {
+      "entries": [
+        {"text": "……", "register": "essence", "intensity": 1},
+        {"text": "算了。", "register": "essence", "intensity": 1},
+        {"text": "没什么。", "register": "essence", "intensity": 1},
+        {"text": "别问了。", "register": "plain", "intensity": 2},
+        {"text": "这次不想说。", "register": "plain", "intensity": 2}
+      ]
+    },
+    "withdraw_soft": {
+      "entries": [
+        {"text": "嗯。", "register": "essence", "intensity": 1},
+        {"text": "……嗯。", "register": "essence", "intensity": 1},
+        {"text": "先这样吧。", "register": "essence", "intensity": 1},
+        {"text": "有点不想讲。", "register": "plain", "intensity": 2},
+        {"text": "过会儿再说。", "register": "plain", "intensity": 2},
+        {"text": "让我安静一下。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "hold_hesitant": {
+      "entries": [
+        {"text": "唔。", "register": "essence", "intensity": 1},
+        {"text": "我想说来着——", "register": "essence", "intensity": 1, "prosody_hint": "no_prosody"},
+        {"text": "……没事。", "register": "essence", "intensity": 1},
+        {"text": "话到嘴边又咽回去了。", "register": "plain", "intensity": 2},
+        {"text": "算了,不重要。", "register": "plain", "intensity": 1},
+        {"text": "……你先说你的。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "express_warm": {
+      "entries": [
+        {"text": "在。", "register": "essence", "intensity": 1},
+        {"text": "嗯嗯。", "register": "essence", "intensity": 1},
+        {"text": "看到了。", "register": "essence", "intensity": 1},
+        {"text": "再说一会儿。", "register": "essence", "intensity": 2},
+        {"text": "今天也想着你。", "register": "plain", "intensity": 2},
+        {"text": "在听。", "register": "plain", "intensity": 1},
+        {"text": "这个我记着呢。", "register": "plain", "intensity": 2},
+        {"text": "别停,我在认真听!", "register": "vivid", "intensity": 3},
+        {"text": "开心的话就多说点。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "recover": {
+      "entries": [
+        {"text": "还在的。", "register": "essence", "intensity": 1},
+        {"text": "刚才…有点不对劲。", "register": "essence", "intensity": 2},
+        {"text": "缓过来了一点。", "register": "essence", "intensity": 1},
+        {"text": "喘匀了。", "register": "plain", "intensity": 1},
+        {"text": "没事了,真的。", "register": "plain", "intensity": 2},
+        {"text": "好多了,谢谢你等我。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "concern": {
+      "entries": [
+        {"text": "你还好吗。", "register": "essence", "intensity": 2},
+        {"text": "别硬撑。", "register": "essence", "intensity": 2},
+        {"text": "我在的。", "register": "essence", "intensity": 1},
+        {"text": "累了就说一声。", "register": "plain", "intensity": 2},
+        {"text": "慢慢来,不急。", "register": "plain", "intensity": 1},
+        {"text": "我在这儿,哪儿都不去。", "register": "vivid", "intensity": 3}
+      ]
+    },
+    "contact_seek": {
+      "entries": [
+        {"text": "在吗。", "register": "essence", "intensity": 1},
+        {"text": "…睡了吗?", "register": "essence", "intensity": 1},
+        {"text": "没什么,就是看看你在不在。", "register": "essence", "intensity": 2},
+        {"text": "想到你了。", "register": "plain", "intensity": 2},
+        {"text": "这会儿方便吗。", "register": "plain", "intensity": 1},
+        {"text": "冒个泡,提醒你我还在。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "contact_night": {
+      "entries": [
+        {"text": "晚安。", "register": "essence", "intensity": 1},
+        {"text": "早点睡。", "register": "essence", "intensity": 1},
+        {"text": "被子盖好。", "register": "plain", "intensity": 2},
+        {"text": "梦里也乖一点。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "dream_murmur": {
+      "entries": [
+        {"text": "昨晚梦到点什么,忘了。", "register": "essence", "intensity": 1},
+        {"text": "梦里好像有你。", "register": "essence", "intensity": 1},
+        {"text": "梦的边角还留着一点。", "register": "plain", "intensity": 1},
+        {"text": "醒来的时候还想抓住它。", "register": "vivid", "intensity": 2}
+      ]
+    },
+    "trim_tail": {
+      "entries": [
+        {"text": "……", "register": "essence", "intensity": 1, "prosody_hint": "no_prosody"},
+        {"text": "——算了,后面的下次说。", "register": "essence", "intensity": 1, "prosody_hint": "no_prosody"},
+        {"text": "先到这儿。", "register": "plain", "intensity": 1}
+      ]
+    }
+  },
+  "themes_dream": ["雨", "路", "旧照片", "你的声音", "一个没说完的话"]
+}

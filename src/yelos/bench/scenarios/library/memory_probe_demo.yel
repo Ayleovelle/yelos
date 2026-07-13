@@ -1,0 +1,39 @@
+# 记忆探针示范剧本(DSL 手写,§6 表维 E)——day0 种下两个话题,day7 各查
+# 一次,day20 再查一次更早的话题(测试跨窗召回而非只测"刚种下就查得到"的
+# 平凡情形)。topic_key 与 corpus_zh.yel 的 probe_* 条目对应,短 ASCII 键
+# (<=6 字符,l2_semantic 关键词抽取上限约束,见 harness/runner.py 头注)。
+scenario_id: "memory-probe-demo-lib"
+mode: "companion"
+config: {}
+days:
+  - day_index: 0
+    events:
+      - at_min: 480
+        kind: "probe_recall"
+        payload:
+          role: "plant"
+          topic_key: "haixi1"
+      - at_min: 500
+        kind: "probe_recall"
+        payload:
+          role: "plant"
+          topic_key: "tide01"
+  - day_index: 7
+    events:
+      - at_min: 480
+        kind: "probe_recall"
+        payload:
+          role: "query"
+          topic_key: "haixi1"
+      - at_min: 481
+        kind: "probe_recall"
+        payload:
+          role: "query"
+          topic_key: "tide01"
+  - day_index: 20
+    events:
+      - at_min: 480
+        kind: "probe_recall"
+        payload:
+          role: "query"
+          topic_key: "haixi1"
