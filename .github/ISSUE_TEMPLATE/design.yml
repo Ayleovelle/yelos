@@ -1,0 +1,89 @@
+name: '🎨 设计 / 交互建议'
+title: '[Design] '
+description: 提交库 API、MCP 工具、配置项或使用体验方面的建议。
+labels: [ 'type/design' ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您抽出时间提出设计建议！如果您对库 API 的形状、MCP 工具集（`affect_*` tools）的划分与命名、`yelos.config.json` 配置项设计，或可选 WebUI 面板（`ui` extra）的使用体验有改进想法，欢迎通过该模板与我们分享。
+
+  - type: textarea
+    attributes:
+      label: 你想改进的设计是什么？
+      description: 请描述当前存在的问题，或你希望优化的体验环节。
+      placeholder: >
+        如: `manager.impulse(sid)` 返回的列表没有区分来源（proactive / dream / concern），下游需要自己再判断一次。
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 当前体验中的问题
+      description: 请说明当前设计让你感到困惑、不顺畅或效率较低的地方。
+      placeholder: >
+        如: 首次接入 SessionManager 时需要连续调用多个方法才能拿到可用状态，且顺序容易搞错。
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 建议的改进方案
+      description: 请描述你的改进思路。可以是文字说明、接口签名建议、参数/返回结构调整，或交互草案。
+      placeholder: >
+        如: 为 impulse() 增加可选的 kind 过滤参数；为常见的 bind+ensure_engine 组合提供一个便捷的高层封装。
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 建议主要涉及哪一类设计问题？
+      description: 请选择最接近的一项。
+      multiple: false
+      options:
+        - '库 API 设计（参数 / 返回结构 / SessionManager 方法划分）'
+        - 'MCP 工具（tools）划分与命名'
+        - '配置项（yelos.config.json 及环境变量）设计'
+        - '可选 WebUI 面板（ui extra / _AuxServer）体验'
+        - '其他'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 使用场景
+      description: 请描述该设计建议最常出现在哪类使用场景中。
+      placeholder: >
+        如: 首次接入 SessionManager 时、配置 assessor_model 时、轮询 impulse() 时、处理 farewell 两阶段确认时等。
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 参考资料（可选）
+      description: >
+        如接口草案、截图、示意图、其他库的类似设计案例或你整理的流程说明，都可以附在这里。
+      placeholder: >
+        可粘贴代码草案、截图链接、参考接口或其他辅助材料。
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: 你愿意参与后续设计讨论或提交 PR 吗？
+      description: >
+        这不是必须的，但如果你愿意继续参与，我们会非常欢迎。
+      options:
+        - label: 是的，我愿意继续参与设计讨论或提交 PR!
+
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: >
+            我已阅读并同意遵守该项目的 [行为准则](https://docs.github.com/zh/site-policy/github-terms/github-community-code-of-conduct)。
+          required: true
+
+  - type: markdown
+    attributes:
+      value: "感谢您填写我们的表单！"

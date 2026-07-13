@@ -1,0 +1,78 @@
+name: '🎉 功能建议'
+description: 提交建议帮助我们改进。
+title: '[Feature] '
+labels: [ 'type/feat' ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您抽出时间提出新功能建议，请准确解释您的想法。
+
+  - type: textarea
+    attributes:
+      label: 描述
+      description: 简短描述您的功能建议。
+      placeholder: >
+        请简要说明你希望新增、改进或调整的功能。
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 使用场景
+      description: 你想要发生什么？
+      placeholder: >
+        一个清晰且具体的描述这个功能的使用场景。
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 该功能主要影响哪一层？
+      description: 请选择最接近的一项。
+      options:
+        - '库 API (yelos.session.SessionManager / yelos.server 等)'
+        - 'MCP 工具层 (affect_* tools / resources / prompts)'
+        - '配置项 (yelos.config.json 及环境变量)'
+        - '文档 (README / README.zh-CN / CHANGELOG)'
+        - '其他'
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 你期望在哪种使用方式下用到该功能？（可选）
+      description: 如该建议希望库/MCP 两种用法都兼容，可选择“不确定”并在下方补充说明。
+      options:
+        - '作为 Python 库导入 (import yelos / SessionManager)'
+        - 'MCP server — stdio 模式 (python -m yelos)'
+        - 'MCP server — streamable-http 模式 (YELOS_TRANSPORT=streamable-http)'
+        - '不确定 / 两者都要'
+
+  - type: textarea
+    attributes:
+      label: 补充说明（可选）
+      description: >
+        如该建议与 sylanne-core 版本、v0.1 的范围限制、或某个 Act（primal/arbiter/intrinsic/shadow/finitude）相关，请在这里补充。
+      placeholder: >
+        如: 希望 impulse() 支持按类型过滤；希望 degraded 模式下也能返回更详细的诊断信息等。
+
+  - type: checkboxes
+    attributes:
+      label: 你愿意提交 PR 吗?
+      description: >
+        这不是必须的，但我们欢迎您的贡献。
+      options:
+        - label: 是的, 我愿意提交PR!
+
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: >
+            我已阅读并同意遵守该项目的 [行为准则](https://docs.github.com/zh/site-policy/github-terms/github-community-code-of-conduct)。
+          required: true
+
+  - type: markdown
+    attributes:
+      value: '感谢您填写我们的表单！'
