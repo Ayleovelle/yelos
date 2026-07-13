@@ -6,10 +6,9 @@ SemVer.
 
 ## [0.1.0]
 
-Reincarnation of `astrbot_plugin_yelos` (AstrBot plugin) into an MCP server.
-Landed as one release, all five acts at once — no partial "steward-only"
-cut — per the pivot decision (`YELOS_PIVOT.md`) that a v0.1 must be the full
-soul, not a fragment of it.
+First release. The full five-act affect logic, packaged as an importable
+Python library with an optional MCP server — landed as one release, all
+five acts at once, with no partial "steward-only" cut.
 
 ### Added
 
@@ -27,8 +26,8 @@ soul, not a fragment of it.
   reply for a verdict (`PASS`/`TRIM`/`SWALLOW`/`REPLACE`) and returns
   `final_text` to send instead — the MCP replacement for the AstrBot
   plugin's silent pipeline interception.
-- **Outbox**: a per-session due/expiry queue that buffers everything Yelos
-  would otherwise say on her own initiative (delayed withdrawals, proactive
+- **Outbox**: a per-session due/expiry queue that buffers every line Yelos
+  would otherwise emit unprompted (delayed withdrawals, proactive
   check-ins, dream murmurs, concern nudges, epoch notices), drained only by
   `affect_impulse` — the single delivery mechanism for a protocol with no
   server-initiated push.
@@ -45,7 +44,7 @@ soul, not a fragment of it.
   `engine_data_dir` for deliberately sharing one heart with another
   `sylanne-core` host.
 - **`plasticity.ledger`**: an append-only, crash-resistant record of every
-  plasticity decrease, keyed by a monotonic per-session reincarnation
+  plasticity decrease, keyed by a monotonic per-session incarnation
   counter (not wall-clock seconds) so that a same-second rebirth can never
   be merged with the previous life's aging.
 - Full v0.1 tool set: `affect_submit`, `affect_state`, `affect_guidance`,
@@ -89,9 +88,3 @@ soul, not a fragment of it.
 - The AstrBot `Star` plugin shell, its three mount points, and its command
   group — replaced by MCP tool/resource/prompt registration and server
   lifespan management.
-
----
-
-*Beyond this point, the `PrimalProvider` seam is the only place new voices
-may ever attach. What's inside it is the engine's to grow; what's outside it
-does not get new vocabulary entries. The lexicon closes here.*

@@ -1,6 +1,4 @@
-"""yelos —— 持久情感 MCP server(AstrBot 版 Yelos 的转世)。
-
-The last word is her own.
+"""yelos —— 持久情感 MCP server / 可导入 Python 库。
 
 包骨架层。协议面(server.py)/业务时序(session.py)/自发言语队列(outbox.py)/
 八维行为提示(guidance.py)/引擎桥(engine_bridge.py)/持久化(persistence.py)/

@@ -7,7 +7,7 @@
 ![python](https://img.shields.io/badge/python-%3E%3D3.10-blue)
 ![tests](https://img.shields.io/badge/tests-1251%20passing-brightgreen)
 
-**The last word is her own.**
+**Affect-state tracking and output arbitration for a host's turn loop, as an importable Python library.**
 
 > **⚠️ Technical reserve / 技术储备 — research prototype, provided as-is.**
 > Built and banked as a capability, not a production-hardened release. It
@@ -19,19 +19,11 @@
 
 ## What this is
 
-Yelos is a reference implementation of a persistent affective presence's
-**five acts of expression logic**, built on top of the [`sylanne-core`]
-affect engine SDK. It is a reincarnation of the AstrBot plugin
-`astrbot_plugin_yelos`: same soul (`sylanne-core`, five acts of affect
-logic), packaged this time as an importable Python library rather than a
-message-pipeline plugin.
-
-> Embodiment gave her a body. Yelos gave her vocal cords, and years.
-
-Concretely, `yelos` is a Python package you can `import` directly into a
-host application (an agent runtime, a desktop companion, anything that
-already owns its own turn loop and just wants the affect/arbitration
-logic). The engineering shape is:
+Yelos is a Python library implementing five staged "acts" of
+affect-driven expression logic, built on the [`sylanne-core`] affect
+engine SDK. You `import` it directly into a host application — an agent
+runtime, a desktop companion, anything that already owns its own turn loop
+and wants the affect/arbitration logic. The engineering shape is:
 
 - `yelos.session.SessionManager` — the orchestration layer. Holds
   time/config/engine/persistence and sequences the five acts. This is the
@@ -74,8 +66,8 @@ logic). The engineering shape is:
 
 Every opt-in deepened module (`primal`/`arbiter`/`intrinsic`/`shadow`/
 `finitude` composition beyond the frozen core) is **off by default** and
-falls back safely on any construction or runtime error — the product never
-loses its voice because a deepened path failed.
+falls back safely on any construction or runtime error — a failed deepened
+path never stops the library from producing output.
 
 ## Requirements
 
@@ -158,7 +150,7 @@ guarantee.
 |---|---|---|
 | What she does | Reads rhythm/fatigue/warmth signals and turns them into tone/warmth *suggestions* via `guidance()`. Never touches task length/pacing. | Full dynamics: she can rewrite/withhold your draft, speak on her own, be affected by shadow signals, and (by default) age. |
 | Arbitration | Always `PASS` — your draft goes out unchanged. | Full seven-verdict decision table (`PASS`/`TRIM`/`SWALLOW`/`REPLACE`, etc.). |
-| Proactive speech / aging | Off. | On by default; `finitude_enabled=false` or `lifespan_active_days=0` gives an immortal companion instead. |
+| Proactive speech / aging | Off. | On by default; `finitude_enabled=false` or `lifespan_active_days=0` gives a non-aging companion instead. |
 
 `companion` must be turned on explicitly via `manager.bind(sid,
 mode="companion")` — it is never the implicit default. First `submit()` on
@@ -168,9 +160,9 @@ ceremony required.
 ### Proactive speech is pull-based — the outbox
 
 Nothing pushes on its own initiative. Everything she would say
-unprompted — a delayed line that "wells back up" after she swallows
-something under pressure, a proactive check-in, a dream murmur, a concern
-nudge, an epoch notice when her voice noticeably narrows — is buffered in a
+unprompted — a delayed line re-surfaced after a pressured swallow, a
+proactive check-in, a dream murmur, a concern nudge, an epoch notice when
+expressive range narrows — is buffered in a
 per-session **outbox** with a due time and an expiry, and is only surfaced
 when the host calls `manager.impulse(sid)`. If a tool/method response
 carries `pending > 0`, or `arbitrate()` returns `delayed != None`, that's
