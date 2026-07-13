@@ -2,6 +2,11 @@
 
 [English](README.md) · **中文**
 
+![license](https://img.shields.io/badge/license-AGPL--3.0-blue)
+![status](https://img.shields.io/badge/status-technical%20reserve%20%C2%B7%20v0.1-orange)
+![python](https://img.shields.io/badge/python-%3E%3D3.10-blue)
+![tests](https://img.shields.io/badge/tests-1251%20passing-brightgreen)
+
 **最后一句话，由她自己说了算。**
 
 > **⚠️ 技术储备 / Technical reserve —— 研究原型，按现状提供（as-is）。**
